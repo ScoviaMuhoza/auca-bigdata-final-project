@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+users.json
+products.json
+categories.json
+transactions.json
+sessions_*.json
+data_small/
+data_full/
+output/clean/
+spark-warehouse/
+metastore_db/
+derby.log

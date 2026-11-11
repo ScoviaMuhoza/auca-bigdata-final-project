@@ -1,0 +1,22 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: bd-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  hbase:
+    image: harisekhon/hbase
+    container_name: bd-hbase
+    ports:
+      - "16010:16010"   # HBase web UI
+      - "9090:9090"     # Thrift server (Python connects here)
+      - "2181:2181"     # ZooKeeper
+    volumes:
+      - hbase_data:/hbase-data
+
+volumes:
+  mongo_data:
+  hbase_data:

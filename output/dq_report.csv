@@ -1,0 +1,17 @@
+check,count
+users_raw,10000
+users_clean,10000
+users_last_active_before_registration,0
+products_raw,5000
+products_clean,5000
+products_active_but_no_stock,163
+products_non_positive_price,0
+transactions_raw,50000
+transactions_clean,50000
+transactions_without_session,24906
+transactions_amount_mismatch,0
+sessions_raw,200000
+sessions_clean,200000
+sessions_bad_duration,0
+sessions_converted_label,40609
+sessions_converted_without_transaction,15515

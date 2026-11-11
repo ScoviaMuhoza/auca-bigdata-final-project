@@ -1,0 +1,6 @@
+stage,sessions,pct_of_all,pct_of_previous_stage
+1 sessions,100000,100.0,
+2 viewed a product,98716,98.7,98.7
+3 cart not empty,64939,64.9,65.8
+4 reached checkout,43618,43.6,67.2
+5 verified purchase (MongoDB),20239,20.2,46.4

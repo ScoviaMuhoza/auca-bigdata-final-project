@@ -1,0 +1,11 @@
+item_a,item_b,pair_count,n_a,n_b,support,confidence_a_to_b,confidence_b_to_a,lift
+Baldwin Ltd,"Ellis, Baker and Wright",338,4521,4423,0.00676,0.0748,0.0764,0.845
+Rodriguez-Graham,Smith Ltd,264,4184,3733,0.00528,0.0631,0.0707,0.845
+"Brewer, Bryant and Hickman",Carney-Santos,344,4492,4568,0.00688,0.0766,0.0753,0.838
+James LLC,Smith Ltd,242,3871,3733,0.00484,0.0625,0.0648,0.837
+Hancock Inc,Mitchell-Kim,344,4763,4333,0.00688,0.0722,0.0794,0.833
+James LLC,"Moore, Becker and Carlson",240,3871,3807,0.0048,0.062,0.063,0.814
+Mitchell-Kim,Skinner-Romero,280,4333,3972,0.0056,0.0646,0.0705,0.813
+Mitchell-Kim,Phillips Inc,319,4333,4538,0.00638,0.0736,0.0703,0.811
+"Rodriguez, Figueroa and Sanchez",Smith Ltd,216,3586,3733,0.00432,0.0602,0.0579,0.807
+Bush Inc,Owens-Daniel,302,4381,4284,0.00604,0.0689,0.0705,0.805

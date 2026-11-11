@@ -1,0 +1,24 @@
+# ===== HBase SHELL: schema + sample queries =====
+# Open the shell:   docker exec -it bd-hbase hbase shell
+
+# --- Schema creation ---
+create 'user_sessions', {NAME => 'info', VERSIONS => 1}, {NAME => 'pv', VERSIONS => 1}, {NAME => 'cart', VERSIONS => 1}
+create 'product_daily_metrics', {NAME => 'm', VERSIONS => 1}
+list
+describe 'user_sessions'
+
+# --- Queries ---
+# Count rows (can be slow on big tables)
+count 'user_sessions', INTERVAL => 50000
+
+# Latest 3 sessions of one user (prefix scan, newest first because of reverse timestamp)
+scan 'user_sessions', {ROWPREFIXFILTER => 'user_000042#', LIMIT => 3, COLUMNS => ['info']}
+
+# Only some columns
+scan 'user_sessions', {ROWPREFIXFILTER => 'user_000042#', LIMIT => 1, COLUMNS => ['info:status', 'info:referrer']}
+
+# One product, a range of days
+scan 'product_daily_metrics', {STARTROW => 'prod_00123#20260901', STOPROW => 'prod_00123#20261001'}
+
+# Get one exact row (replace with a real key printed by a scan)
+# get 'user_sessions', 'user_000042#<reverse_timestamp>'
